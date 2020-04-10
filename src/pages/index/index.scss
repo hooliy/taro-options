@@ -1,0 +1,83 @@
+/* Custom Theme */
+$color-brand: #128bed;
+$color-brand-light: #4da8f2;
+$color-brand-dark: #0e6fbe;
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.com_where {
+    .fw {
+        font-weight: 700;
+    }
+    .where {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        font-size: 26px;
+        height: 60px;
+        line-height: 60px;
+        .item {
+            text-align: center;
+            width: 100%;
+            .downicon {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    .where_wapper {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+        z-index: 9;
+        width: 100%;
+        .section {
+            position: relative;
+            z-index: 999;
+            background-color: #fff;
+            width: 100%;
+            font-size: 26px;
+            .sv {
+                height: 600px;
+            }
+            .item {
+                border-bottom: 1px solid #eee;
+                padding: 18px 32px;
+                .title {
+                    font-weight: 700;
+                }
+                .tags {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 10px -10px;
+                    .tag {
+                        background-color: #eee;
+                        color: #333;
+                        padding: 3px 34px;
+                        margin: 10px;
+                    }
+                }
+            }
+
+            .item_btn {
+                width: 100%;
+                display: flex;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -78px;
+                .btn {
+                    height: 78px;
+                    background-color: #eee;
+                    color: #333;
+                    text-align: center;
+                    line-height: 78px;
+                    flex: 1 1 auto;
+                    &.done {
+                        background-color: $color-brand;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
